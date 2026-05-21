@@ -480,6 +480,8 @@ if (MSVC)
         configure_msvc_target(gpt-j-quantize)
 
         configure_msvc_target(magika)
+        configure_msvc_target(matmul)
+        configure_msvc_target(conv2d)
         configure_msvc_target(yolov3-tiny)
         configure_msvc_target(sam)
 

@@ -14,6 +14,21 @@
                 "CMAKE_CXX_COMPILER": "cl",
                 "GGML_BUILD_TESTS": "OFF"
             }
+        },
+        {
+            "name": "gcc-ninja-cuda-release",
+            "displayName": "GCC Ninja Cuda Release",
+            "description": "",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build-${presetName}/install",
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++",
+                "GGML_BUILD_TESTS": "OFF",
+                "GGML_CUDA": "ON"
+            }
         }
     ]
 }
